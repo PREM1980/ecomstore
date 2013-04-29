@@ -1,5 +1,3 @@
-#This is version 2
-
 # Django settings for ecomstore project.
 
 DEBUG = True
@@ -13,11 +11,11 @@ MANAGERS = ADMINS
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'sakila',                      # Or path to database file if using sqlite3.
+        'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+        'NAME': 'C:\\Users\\temp_plakshmanan\\workspace1\\ecomstore\\sqlite.db',                      # Or path to database file if using sqlite3.
         # The following settings are not used with sqlite3:
-        'USER': 'root',
-        'PASSWORD': 'colossal',
+        'USER': '',
+        'PASSWORD': '',
         'HOST': '',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
         'PORT': '',                      # Set to empty string for default.
     }
@@ -85,7 +83,7 @@ STATICFILES_FINDERS = (
 )
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = '_8$zgk@yprr!hz@kik5=*jf-^l89@^%@##&li1g$7cq3^@lvm+'
+SECRET_KEY = 'nz6=xq9v^nmd9arhhv&r%lm(ls^09!jnfk+-efyt+75ctxa_ca'
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (

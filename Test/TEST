@@ -1,0 +1,11 @@
+
+print 'hi'
+lista=[1,2,3]
+print lista
+if lista:
+	print 'yes'
+
+if lista:
+	pass
+lista.append(4)
+print lista
