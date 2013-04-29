@@ -1,0 +1,16 @@
+'''
+Created on Apr 29, 2013
+
+@author: temp_plakshmanan
+'''
+from django import forms
+from ecomstore.catalog.models import Product 
+
+class ProductAdminForm(forms.ModelForm):
+    class Meta:
+        model = Product
+
+    def clean_price(self):
+        if self.cleaned_data['price'] <= 0:
+            raise forms.ValidationError('Price must be greater than zero.')
+        return self.cleaned_data['price']
